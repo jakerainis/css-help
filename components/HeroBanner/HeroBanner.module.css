@@ -1,15 +1,10 @@
 .root {
-  background-color: black;
-  /* background-image: url("https://code.theothermattm.com/img/strat.webp");
-  background-size: cover; */
+  @apply bg-black bg-[url('https://code.theothermattm.com/img/strat.webp')] bg-cover;
 }
 
 .navBar {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 24px;
+  @apply flex justify-between items-center p-6;
 }
 .navBar * {
-  color: white;
+  @apply text-white;
 }
