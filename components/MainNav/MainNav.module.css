@@ -1,0 +1,45 @@
+.root {
+  position: relative;
+}
+
+.burger {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 48px;
+}
+
+.menu {
+  display: none;
+  /* display: flex; */
+  justify-content: space-between;
+  list-style: none;
+  gap: 12px;
+}
+.menu.mobileMenuOpen {
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+.menu a {
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+}
+.root a:hover {
+  color: #666;
+}
+
+@media screen and (min-width: 600px) {
+  .burger {
+    display: none;
+  }
+  .menu,
+  .menu.mobileMenuOpen {
+    display: flex;
+    position: relative;
+  }
+}
